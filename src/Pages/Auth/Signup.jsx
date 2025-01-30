@@ -1,9 +1,9 @@
 import { useState } from "react";
 import toast from "react-hot-toast";
-import SignUpPresentation from "./SignupPresentation";
 import { useDispatch } from "react-redux";
 import { createAccount } from "../../Redux/Slices/AuthSlice";
 import { useNavigate } from "react-router-dom";
+import SignUpPresentation from "./SignupPresentational";
 // Container for the Signup page
 function Signup() {
 
@@ -62,8 +62,7 @@ function Signup() {
     return (
         <SignUpPresentation 
             handleFormSubmit={handleFormSubmit} 
-            handleUserInput={handleUserInput} 
-            
+            handleUserInput={handleUserInput}  
         />
     )
 }

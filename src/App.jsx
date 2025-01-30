@@ -14,8 +14,6 @@ import OrderSuccess from './Pages/Order/OrderSuccess'
 import RequireAuth from './Components/Icons/Auth/RequireAuth'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <Routes>
